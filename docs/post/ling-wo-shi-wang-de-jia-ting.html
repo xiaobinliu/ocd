@@ -89,12 +89,14 @@ if("01/01/2009"!=""){
     document.getElementById("year").innerHTML=now.getFullYear();
     //if(""!=""){
       //  document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
-    //else{
-    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";//}
-    diffDay=diffDay-15*365;
+    //else{ 
+    
     document.getElementById("nojobday").innerHTML= "全力治病"+diffDay+"天"+" • ";
+    diffDay=diffDay-15*365;
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";//}
+   
     diffDay=diffDay+34*365;
-    document.getElementById("ocdday").innerHTML= "和病魔抗争"+diffDay+"天"+" • ";
+    document.getElementById("ocdday").innerHTML= "和病魔抗争"+diffDay+"天";
 }
 </script>
 </div>
