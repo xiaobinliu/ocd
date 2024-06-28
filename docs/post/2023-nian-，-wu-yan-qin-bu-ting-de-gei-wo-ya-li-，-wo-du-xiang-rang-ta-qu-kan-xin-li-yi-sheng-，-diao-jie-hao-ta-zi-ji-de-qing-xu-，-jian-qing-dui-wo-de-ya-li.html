@@ -92,7 +92,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="https://xiaobinliu.github.io/ocd"> 刘小斌的强迫症治愈之路 </a>
 <p>
-<span id="runday"></span>Powered by Lius.us<!--a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a-->
+<span id="runday"></span>
+<span id="ocdday"></span> Powered by Lius.us
+<!--a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a-->
 </p>
 
 <script>
@@ -102,8 +104,12 @@ if("01/01/2009"!=""){
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
     document.getElementById("year").innerHTML=now.getFullYear();
-    if(""!=""){document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
-    else{document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
+    if(""!=""){
+        document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
+    else{
+        document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
+    diffDay=diffDay+19*365;
+    document.getElementById("ocdday").innerHTML= "和病魔抗争"+diffDay+"天"+" • ";
 }
 </script>
 </div>
@@ -137,7 +143,7 @@ function utterancesTheme(theme){
     iframe.contentWindow.postMessage(message,'https://utteranc.es');
 }
 if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
-console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5px 0;background:#02d81d;color:#fff");
+console.log("\n %c Gmeek last https://github.com/xiaobinliu/Gmeek \n\n","padding:5px 0;background:#02d81d;color:#fff");
 </script>
 
 <script>
